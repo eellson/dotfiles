@@ -22,6 +22,8 @@ filetype plugin indent on    " required
 " :PluginSearch foo - searches for foo; append `!` to refresh local cache
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 
+" Colors
+
 if $TERM == "xterm-256color" || $TERM == "screen-256color"
   set t_Co=256
 endif
