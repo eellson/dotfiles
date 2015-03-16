@@ -69,6 +69,9 @@ nnoremap <space> :nohlsearch<CR>
 
 " Movement
 
+" sensible backspacing
+set backspace=indent,eol,start
+
 " easier split navigation
 nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
