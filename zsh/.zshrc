@@ -84,5 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# better bundle alias
+alias b='bundle install --binstubs .bundle/bin --path .bundle/gems'
 
 
