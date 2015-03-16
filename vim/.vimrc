@@ -47,6 +47,8 @@ set wildmenu            " visual autocomplete for command menu
 set number
 set showcmd
 set cursorline
+set list
+set listchars=eol:¬
 
 " allows cursor change in tmux mode
 if exists('$TMUX')
