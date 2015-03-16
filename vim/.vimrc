@@ -10,6 +10,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " Keep Plugin commands between vundle#begin/end.
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rails'
 Plugin 'sjl/badwolf'
 
 " All of your Plugins must be added before the following line
