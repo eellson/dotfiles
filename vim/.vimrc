@@ -38,3 +38,11 @@ set softtabstop=2
 set expandtab
 set wildmenu            " visual autocomplete for command menu
 
+" Misc graphical stuff
+
+set number
+set showcmd
+set cursorline
+
+" Filetype detection, indentation
+filetype indent on
