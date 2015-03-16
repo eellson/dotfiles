@@ -45,4 +45,11 @@ set showcmd
 set cursorline
 
 " Filetype detection, indentation
+
 filetype indent on
+
+" Search
+
+set incsearch
+set hlsearch
+nnoremap <space> :nohlsearch<CR>
