@@ -36,3 +36,5 @@ colorscheme badwolf         " awesome colorscheme
 set tabstop=2
 set softtabstop=2
 set expandtab
+set wildmenu            " visual autocomplete for command menu
+
