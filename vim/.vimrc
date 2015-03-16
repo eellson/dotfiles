@@ -13,6 +13,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'sjl/badwolf'
 Plugin 'rking/ag.vim'
+Plugin 'benmills/vimux'
+Plugin 'jgdavey/vim-turbux'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
