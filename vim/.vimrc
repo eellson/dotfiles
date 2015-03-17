@@ -49,6 +49,9 @@ set showcmd
 set cursorline
 set list
 set listchars=eol:¬
+if exists('+colorcolumn')
+  set colorcolumn=80
+end
 
 " allows cursor change in tmux mode
 if exists('$TMUX')
