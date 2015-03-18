@@ -53,6 +53,7 @@ set listchars=eol:¬
 if exists('+colorcolumn')
   set colorcolumn=80
 end
+set scrolloff=3
 
 " allows cursor change in tmux mode
 if exists('$TMUX')
