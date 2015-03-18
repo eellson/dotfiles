@@ -84,3 +84,8 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
+" Editing
+
+" allow hidden buffers
+set hidden
+
