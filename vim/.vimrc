@@ -88,10 +88,11 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
- :command WQ wq
- :command Wq wq
- :command W w
- :command Q q
+" allow write/quit with W/Q
+command! WQ wq
+command! Wq wq
+command! W w
+command! Q q
 
 " Editing
 
