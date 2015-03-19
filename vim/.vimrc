@@ -93,3 +93,8 @@ nmap <silent> <c-l> :wincmd l<CR>
 " allow hidden buffers
 set hidden
 
+" Visual
+
+" Keep visual block after changing indent
+vmap > >gv
+vmap < <gv
