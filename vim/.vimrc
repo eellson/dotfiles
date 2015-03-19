@@ -68,6 +68,9 @@ endif
 
 filetype indent on
 
+" Ignore swap files in netrw
+let g:netrw_list_hide= '.*\.swp$,\~$,\.orig$'
+
 " Search
 
 set incsearch
