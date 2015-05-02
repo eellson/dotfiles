@@ -57,6 +57,9 @@ eval "$(rbenv init -)"
 
 export PATH="./.bundle/bin:$PATH"
 
+# Bloombox
+export PATH="$PATH:/usr/local/bloombox/bin"
+
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
