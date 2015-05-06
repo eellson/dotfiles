@@ -76,6 +76,8 @@ let g:netrw_list_hide= '.*\.swp$,\~$,\.orig$'
 set incsearch
 set hlsearch
 nnoremap <space> :nohlsearch<CR>
+set ignorecase
+set smartcase
 
 " Movement
 
