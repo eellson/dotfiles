@@ -89,3 +89,6 @@ export VISUAL=/usr/local/bin/vim
 alias b='bundle install --binstubs .bundle/bin --path .bundle/gems'
 
 
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
