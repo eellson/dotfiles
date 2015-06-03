@@ -64,10 +64,6 @@ else
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
 
-" Filetype detection, indentation
-
-filetype indent on
-
 " Ignore swap files in netrw
 let g:netrw_list_hide= '.*\.swp$,\~$,\.orig$'
 
