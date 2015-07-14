@@ -51,6 +51,7 @@ set wildmenu            " visual autocomplete for command menu
 set number
 set showcmd
 set cursorline
+set ruler
 set list
 set listchars=eol:¬
 if exists('+colorcolumn')
