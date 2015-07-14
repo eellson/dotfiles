@@ -11,6 +11,7 @@ Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-endwise'
 Plugin 'sjl/badwolf'
 Plugin 'rking/ag.vim'
 Plugin 'benmills/vimux'
