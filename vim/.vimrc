@@ -86,6 +86,10 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
+" set splits to open to the right and below by default
+set splitbelow
+set splitright
+
 " allow write/quit with W/Q
 command! WQ wq
 command! Wq wq
