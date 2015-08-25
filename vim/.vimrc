@@ -48,6 +48,7 @@ set wildmenu            " visual autocomplete for command menu
 
 " Misc graphical stuff
 
+set relativenumber
 set number
 set showcmd
 set cursorline
