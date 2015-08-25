@@ -45,7 +45,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git vi-mode)
 
 # User configuration
 
@@ -68,7 +68,7 @@ source $ZSH/oh-my-zsh.sh
 # Default editor settings
 export EDITOR=/usr/local/bin/vim
 export VISUAL=/usr/local/bin/vim
-
+export KEYTIMEOUT=1
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -91,6 +91,8 @@ alias b='bundle install --binstubs .bundle/bin --path .bundle/gems'
 
 # use vim bindings
 bindkey -v
+# reeable Ctrl-R for history (unbound with vim bindings)
+bindkey '^R' history-incremental-search-backward
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
