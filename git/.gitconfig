@@ -12,7 +12,7 @@
   default = simple
 
 [core]
-  excludesfile = ~/ed/.gitignore
+  excludesfile = /Users/ed/.gitignore
   editor = vim
 [credential]
   helper = osxkeychain
