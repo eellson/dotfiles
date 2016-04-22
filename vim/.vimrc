@@ -21,6 +21,8 @@ Plugin 'jgdavey/vim-turbux'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'mattn/gist-vim'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'spiegela/vimix'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
