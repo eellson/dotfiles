@@ -20,6 +20,7 @@ Plugin 'benmills/vimux'
 Plugin 'jgdavey/vim-turbux'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'mattn/gist-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
