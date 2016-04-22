@@ -115,3 +115,7 @@ set hidden
 " Keep visual block after changing indent
 vmap > >gv
 vmap < <gv
+
+" Enable vimix bidings
+let g:vimix_map_keys = 1
+
