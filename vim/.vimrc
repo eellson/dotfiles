@@ -129,6 +129,11 @@ vmap < <gv
 " Enable vimix bidings
 let g:vimix_map_keys = 1
 
+""" Vimum
+
+" zoom vimux pane
+ map <Leader>z :VimuxZoomRunner<CR>
+
 """ Localvimrc
 let g:localvimrc_whitelist = ['/Users/ed/Projects/snapetto/.lvimrc', '/Users/ed/Projects/lifegoals/.lvimrc']
 let g:localvimrc_sandbox = 0
