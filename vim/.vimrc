@@ -23,6 +23,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'mattn/gist-vim'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'spiegela/vimix'
+Plugin 'embear/vim-localvimrc'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -119,3 +120,6 @@ vmap < <gv
 " Enable vimix bidings
 let g:vimix_map_keys = 1
 
+""" Localvimrc
+let g:localvimrc_whitelist = ['/Users/ed/Projects/snapetto/.lvimrc', '/Users/ed/Projects/lifegoals/.lvimrc']
+let g:localvimrc_sandbox = 0
