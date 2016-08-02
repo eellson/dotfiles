@@ -65,6 +65,9 @@ if exists('+colorcolumn')
 end
 set scrolloff=3
 
+" Highlight fenced code blocks in Markdown
+let g:markdown_fenced_languages = ['coffee', 'css', 'javascript', 'js=javascript', 'json=javascript', 'ruby', 'sass', 'xml', 'html']
+
 " allows cursor change in tmux mode
 if exists('$TMUX')
   let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
