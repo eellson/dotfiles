@@ -114,6 +114,12 @@ command! Q q
 " allow hidden buffers
 set hidden
 
+" persistent undo
+set undofile
+set undodir=$HOME/.vim/undo " must create this dir
+set undolevels=1000
+set undoreload=10000
+
 " Visual
 
 " Keep visual block after changing indent
