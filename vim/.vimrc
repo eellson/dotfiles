@@ -37,9 +37,7 @@ filetype plugin indent on    " required
 
 " Colors
 
-if $TERM == "xterm-256color" || $TERM == "screen-256color"
-  set t_Co=256
-endif
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 syntax enable
 colorscheme badwolf         " awesome colorscheme
