@@ -13,6 +13,6 @@
 
 [core]
   excludesfile = /Users/ed/.gitignore
-  editor = vim
+  editor = nvim
 [credential]
   helper = osxkeychain
