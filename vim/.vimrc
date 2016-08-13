@@ -1,137 +1,66 @@
-set nocompatible
-filetype off
+""""" PLUGINS
 
-" Vundle begin
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
+" Make sure you use single quotes
 
-" let Vundle manage Vundle
-Plugin 'gmarik/Vundle.vim'
+Plug 'airblade/vim-gitgutter' " git indicators in gutter
+Plug 'joshdick/onedark.vim' " onedark colourscheme
+Plug 'sheerun/vim-polyglot' " language packs
+Plug 'tpope/vim-fugitive' " git plugin
+Plug 'tpope/vim-rails' " rails plugin
+Plug 'sjl/badwolf'
 
-" Keep Plugin commands between vundle#begin/end.
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-vinegar'
-Plugin 'sjl/badwolf'
-Plugin 'rking/ag.vim'
-Plugin 'benmills/vimux'
-Plugin 'eellson/vim-turbux'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'mattn/gist-vim'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'spiegela/vimix'
-Plugin 'embear/vim-localvimrc'
+" Add plugins to &runtimepath
+call plug#end()
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+""""" BEHAVIOUR
 
-" Colors
+""" Splits
+set splitbelow " new split opens below
+set splitright " new split opens right
 
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+""" Tabs
+set shiftwidth=2 " use 2 columns for <</>>
+set softtabstop=2 " use 2 spaces for tab in insert mode
 
-syntax enable
-colorscheme badwolf         " awesome colorscheme
+""" Search
+nnoremap <space> :nohlsearch<CR> " rm search highlight on <space>
 
-" Tabs
+""" Undo
+set undofile " persistent undo
+set undodir=$HOME/.vim/undo " must create this dir
+set undolevels=1000 " set undo history
+set undoreload=10000 " set lines to save for undo
 
-set softtabstop=2
-set shiftwidth=2
-set expandtab
-set wildmenu            " visual autocomplete for command menu
+""""" MOVEMENT
 
-" Misc graphical stuff
-
-set relativenumber
-set number
-set showcmd
-set cursorline
-set ruler
-set list
-set listchars=eol:¬
-if exists('+colorcolumn')
-  set colorcolumn=80
-end
-set scrolloff=3
-
-" Highlight fenced code blocks in Markdown
-let g:markdown_fenced_languages = ['coffee', 'css', 'javascript', 'js=javascript', 'json=javascript', 'ruby', 'sass', 'xml', 'html']
-
-" allows cursor change in tmux mode
-if exists('$TMUX')
-  let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-  let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
-else
-  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-endif
-
-" Ignore swap files in netrw
-let g:netrw_list_hide= '.*\.swp$,\~$,\.orig$'
-
-" Search
-
-set incsearch
-set hlsearch
-nnoremap <space> :nohlsearch<CR>
-set ignorecase
-set smartcase
-
-" Movement
-
-" sensible backspacing
-set backspace=indent,eol,start
-
-" easier split navigation
-nmap <silent> <c-k> :wincmd k<CR>
-nmap <silent> <c-j> :wincmd j<CR>
+""" Better split navigation
 nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <Silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
-" set splits to open to the right and below by default
-set splitbelow
-set splitright
+""""" AESTHETICS
 
-" allow write/quit with W/Q
-command! WQ wq
-command! Wq wq
-command! W w
-command! Q q
+""" UI
+if exists('+colorcolumn')
+  set colorcolumn=80 " highlight column 80
+end
+set cursorline " highlight current line
+set number " show current line number
+set relativenumber " relative line numbers
+set showcmd " show current command in status line
 
-" Editing
+""" Use 24-bit colours
+if (has("nvim"))
+  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
+if (has("termguicolors"))
+  set termguicolors
+endif
 
-" allow hidden buffers
-set hidden
+""" Colourscheme
+syntax on " syntax highlight
 
-" persistent undo
-set undofile
-set undodir=$HOME/.vim/undo " must create this dir
-set undolevels=1000
-set undoreload=10000
-
-" Visual
-
-" Keep visual block after changing indent
-vmap > >gv
-vmap < <gv
-
-" Enable vimix bidings
-let g:vimix_map_keys = 1
-
-""" Vimum
-
-" zoom vimux pane
- map <Leader>z :VimuxZoomRunner<CR>
-
-""" Localvimrc
-let g:localvimrc_whitelist = ['/Users/ed/Projects/snapetto/.lvimrc', '/Users/ed/Projects/lifegoals/.lvimrc']
-let g:localvimrc_sandbox = 0
+let g:onedark_terminal_italics=1
+colorscheme onedark
