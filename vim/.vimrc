@@ -1,17 +1,36 @@
 """"" PLUGINS
 
 call plug#begin('~/.vim/plugged')
-" Make sure you use single quotes
 
+" Make sure you use single quotes
 Plug 'airblade/vim-gitgutter' " git indicators in gutter
-Plug 'joshdick/onedark.vim' " onedark colourscheme
-Plug 'sheerun/vim-polyglot' " language packs
-Plug 'tpope/vim-fugitive' " git plugin
-Plug 'tpope/vim-rails' " rails plugin
+Plug 'benmills/vimux'         " tmux integration
+Plug 'janko-m/vim-test'       " test wrapper
+Plug 'joshdick/onedark.vim'   " onedark colourscheme
+Plug 'sheerun/vim-polyglot'   " language packs
+Plug 'tpope/vim-fugitive'     " git plugin
+Plug 'tpope/vim-rails'        " rails plugin
 Plug 'sjl/badwolf'
 
 " Add plugins to &runtimepath
 call plug#end()
+
+""" Plugin config
+
+""" vim-test
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
+
+" Run test command in docker web container
+function! DockerWebTransform(cmd) abort
+  return 'docker-compose run web '.a:cmd
+endfunction
+
+let test#strategy = 'vimux' " use vimux test strategy
+let g:test#custom_transformations = {'docker': function('DockerWebTransform')}
 
 """"" BEHAVIOUR
 
