@@ -100,3 +100,7 @@ syntax on " syntax highlight
 
 let g:onedark_terminal_italics=1
 colorscheme onedark
+
+""" Fix for cursor when running under tmux
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+
