@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
 Plug 'airblade/vim-gitgutter' " git indicators in gutter
 Plug 'benmills/vimux'         " tmux integration
+Plug 'embear/vim-localvimrc'  " local vimrc files
 Plug 'janko-m/vim-test'       " test wrapper
 Plug 'joshdick/onedark.vim'   " onedark colourscheme
 Plug 'sheerun/vim-polyglot'   " language packs
@@ -31,6 +32,12 @@ endfunction
 
 let test#strategy = 'vimux' " use vimux test strategy
 let g:test#custom_transformations = {'docker': function('DockerWebTransform')}
+
+""" vim-localvimrc
+let g:localvimrc_whitelist = [
+      \'/Users/ed/Projects/snapetto/.lvimrc',
+      \'/Users/ed/Projects/lifegoals/.lvimrc'
+      \]
 
 """"" BEHAVIOUR
 
