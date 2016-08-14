@@ -65,6 +65,9 @@ command! Wq wq " Wq = wq
 command! W w   " W = w
 command! Q q   " Q = q
 
+""" Buffers
+set hidden " allow hidden buffers
+
 """"" MOVEMENT
 
 """ Better split navigation
