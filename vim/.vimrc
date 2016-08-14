@@ -47,17 +47,17 @@ set splitbelow " new split opens below
 set splitright " new split opens right
 
 """ Tabs
-set shiftwidth=2 " use 2 columns for <</>>
+set shiftwidth=2  " use 2 columns for <</>>
 set softtabstop=2 " use 2 spaces for tab in insert mode
 
 """ Search
 nnoremap <space> :nohlsearch<CR> " rm search highlight on <space>
 
 """ Undo
-set undofile " persistent undo
+set undofile                " persistent undo
 set undodir=$HOME/.vim/undo " must create this dir
-set undolevels=1000 " set undo history
-set undoreload=10000 " set lines to save for undo
+set undolevels=1000         " set undo history
+set undoreload=10000        " set lines to save for undo
 
 """"" MOVEMENT
 
@@ -73,10 +73,10 @@ nmap <silent> <c-l> :wincmd l<CR>
 if exists('+colorcolumn')
   set colorcolumn=80 " highlight column 80
 end
-set cursorline " highlight current line
-set number " show current line number
-set relativenumber " relative line numbers
-set showcmd " show current command in status line
+set cursorline       " highlight current line
+set number           " show current line number
+set relativenumber   " relative line numbers
+set showcmd          " show current command in status line
 
 """ Use 24-bit colours
 if (has("nvim"))
