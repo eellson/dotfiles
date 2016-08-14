@@ -11,6 +11,7 @@ Plug 'joshdick/onedark.vim'   " onedark colourscheme
 Plug 'sheerun/vim-polyglot'   " language packs
 Plug 'tpope/vim-fugitive'     " git plugin
 Plug 'tpope/vim-rails'        " rails plugin
+Plug 'tpope/vim-vinegar'      " netrw sensible defaults
 Plug 'sjl/badwolf'
 
 " Add plugins to &runtimepath
