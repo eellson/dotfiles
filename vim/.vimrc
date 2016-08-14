@@ -59,6 +59,12 @@ set undodir=$HOME/.vim/undo " must create this dir
 set undolevels=1000         " set undo history
 set undoreload=10000        " set lines to save for undo
 
+""" Write/Quit
+command! WQ wq " WQ = wq
+command! Wq wq " Wq = wq
+command! W w   " W = w
+command! Q q   " Q = q
+
 """"" MOVEMENT
 
 """ Better split navigation
