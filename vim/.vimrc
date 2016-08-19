@@ -42,6 +42,9 @@ let g:localvimrc_whitelist = [
       \'/Users/ed/Projects/lifegoals/.lvimrc'
       \]
 
+""" vimux
+map <Leader>z :VimuxZoomRunner<CR> " zoom vimux pane
+
 """"" BEHAVIOUR
 
 """ Splits
