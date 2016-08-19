@@ -1,4 +1,5 @@
-""""" PLUGINS
+" vim:fdm=marker:fen:fdl=0
+""""" PLUGINS {{{1
 
 call plug#begin('~/.vim/plugged')
 
@@ -45,7 +46,7 @@ let g:localvimrc_whitelist = [
 """ vimux
 map <Leader>z :VimuxZoomRunner<CR> " zoom vimux pane
 
-""""" BEHAVIOUR
+""""" BEHAVIOUR {{{1
 
 """ Splits
 set splitbelow " new split opens below
@@ -74,7 +75,7 @@ command! Q q   " Q = q
 """ Buffers
 set hidden " allow hidden buffers
 
-""""" MOVEMENT
+""""" MOVEMENT {{{1
 
 """ Better split navigation
 nnoremap <C-h> <C-w>h " only C-h does not work.
@@ -82,7 +83,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-""""" AESTHETICS
+""""" AESTHETICS {{{1
 
 """ UI
 if exists('+colorcolumn')
