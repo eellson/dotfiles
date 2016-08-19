@@ -52,8 +52,9 @@ set splitbelow " new split opens below
 set splitright " new split opens right
 
 """ Tabs
-set shiftwidth=2  " use 2 columns for <</>>
-set softtabstop=2 " use 2 spaces for tab in insert mode
+set expandtab    " expand tabs into spaces
+set shiftwidth=2 " use 2 columns for <</>>
+set tabstop=2    " use 2 spaces for tab in insert mode
 
 """ Search
 nnoremap <space> :nohlsearch<CR> " rm search highlight on <space>
