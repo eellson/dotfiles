@@ -77,21 +77,22 @@ set hidden " allow hidden buffers
 """"" MOVEMENT
 
 """ Better split navigation
-nmap <silent> <c-h> :wincmd h<CR>
-nmap <silent> <c-j> :wincmd j<CR>
-nmap <Silent> <c-k> :wincmd k<CR>
-nmap <silent> <c-l> :wincmd l<CR>
+nnoremap <C-h> <C-w>h " only C-h does not work.
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 """"" AESTHETICS
 
 """ UI
 if exists('+colorcolumn')
-  set colorcolumn=80 " highlight column 80
+  set colorcolumn=80       " highlight column 80
 end
-set cursorline       " highlight current line
-set number           " show current line number
-set relativenumber   " relative line numbers
-set showcmd          " show current command in status line
+set cursorline             " highlight current line
+set list listchars=trail:· " use · to indicate trailing chars
+set number                 " show current line number
+set relativenumber         " relative line numbers
+set showcmd                " show current command in status line
 
 """ Use 24-bit colours
 if (has("nvim"))
