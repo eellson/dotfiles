@@ -9,6 +9,7 @@ Plug 'embear/vim-localvimrc'  " local vimrc files
 Plug 'janko-m/vim-test'       " test wrapper
 Plug 'joshdick/onedark.vim'   " onedark colourscheme
 Plug 'sheerun/vim-polyglot'   " language packs
+Plug 'tpope/vim-commentary'   " better commenting
 Plug 'tpope/vim-fugitive'     " git plugin
 Plug 'tpope/vim-rails'        " rails plugin
 Plug 'tpope/vim-vinegar'      " netrw sensible defaults
