@@ -75,6 +75,9 @@ command! Q q   " Q = q
 """ Buffers
 set hidden " allow hidden buffers
 
+""" Temp(?) fix for sierra system clipboard
+set clipboard=unnamed
+
 """"" MOVEMENT {{{1
 
 """ Better split navigation
