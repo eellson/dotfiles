@@ -56,11 +56,13 @@ set splitright " new split opens right
 
 """ Tabs
 set expandtab    " expand tabs into spaces
-set shiftwidth=2 " use 2 columns for <</>>
 set tabstop=2    " use 2 spaces for tab in insert mode
+set shiftwidth=2 " use 2 columns for <</>>
 
 """ Search
 nnoremap <space> :nohlsearch<CR> " rm search highlight on <space>
+set ignorecase                   " ignore case when searching
+set smartcase                    " use case when searching if given uppercase in term
 
 """ Undo
 set undofile                " persistent undo
