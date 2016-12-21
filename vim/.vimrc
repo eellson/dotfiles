@@ -82,6 +82,12 @@ set hidden " allow hidden buffers
 """ Temp(?) fix for sierra system clipboard
 set clipboard=unnamed
 
+""" Temp files
+
+set backupdir=~/.vim/backup_files// " directory for backup files
+set directory=~/.vim/swap_files//   " directory for swap files
+set undodir=~/.vim/undo_files//     " directory for undo files
+
 """"" MOVEMENT {{{1
 
 """ Better split navigation
