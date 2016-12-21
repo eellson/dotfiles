@@ -789,15 +789,15 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>-2560 -348 924 485 -2560 0 2560 1417 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>440 495 400 129 0 0 1280 777 </string>
+	<string>-1373 986 400 129 -2560 0 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>330 307 620 392 0 0 1280 800 </string>
+	<string>381 288 620 392 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>327 265 918 512 0 0 1280 777 </string>
+	<string>-1270 956 918 381 -2560 0 2560 1417 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 193 592 584 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1280 800 0 0 1280 777 </string>
+	<string>-2560 0 2560 1440 -2560 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-2217 181 585 452 -2560 0 2560 1417 </string>
 	<key>New Bookmarks</key>
@@ -990,13 +990,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.1093159094452858</real>
+				<real>0.0</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.09138210117816925</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.083582520484924316</real>
+				<real>0.0</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -2496,7 +2496,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-08-19T10:25:03Z</date>
+	<date>2016-08-26T13:25:56Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Selection Respects Soft Boundaries</key>
