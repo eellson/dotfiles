@@ -12,3 +12,21 @@ Style/SpaceAroundEqualsInParameterDefault:
 
 Style/Documentation:
   Enabled: false
+
+Style/Lambda:
+  Enabled: false
+
+Style/SpaceInsideHashLiteralBraces:
+  Enabled: false
+
+Style/DotPosition:
+  Enabled: false
+
+Style/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Style/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Style/MultilineMethodCallIndentation:
+  EnforcedStyle: indented_relative_to_receiver
