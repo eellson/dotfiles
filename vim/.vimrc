@@ -42,11 +42,50 @@ let g:test#custom_transformations = {'docker': function('DockerWebTransform')}
 """ vim-localvimrc
 let g:localvimrc_whitelist = [
       \'/Users/ed/Projects/snapetto/.lvimrc',
-      \'/Users/ed/Projects/lifegoals/.lvimrc'
+      \'/Users/ed/Projects/lifegoals/.lvimrc',
+      \'/Users/ed/Projects/team_minted/.lvimrc'
       \]
 
 """ vimux
 map <Leader>z :VimuxZoomRunner<CR> " zoom vimux pane
+
+""" neomake
+autocmd! BufWritePost * Neomake " run neomake on save
+
+" better credo handling as-per https://github.com/neomake/neomake/pull/300#issuecomment-244722296
+let g:neomake_elixir_enabled_makers = ['mix', 'credo']
+" function NeomakeCredoErrorType(entry)
+"   if a:entry.type ==# 'F'      " Refactoring opportunities
+"     let type = 'W'
+"   elseif a:entry.type ==# 'D'  " Software design suggestions
+"     let type = 'I'
+"   elseif a:entry.type ==# 'W'  " Warnings
+"     let type = 'W'
+"   elseif a:entry.type ==# 'R'  " Readability suggestions
+"     let type = 'I'
+"   elseif a:entry.type ==# 'C'  " Convention violation
+"     let type = 'W'
+"   else
+"     let type = 'M'           " Everything else is a message
+"   endif
+"   let a:entry.type = type
+" endfunction
+
+" let g:neomake_elixir_mycredo_maker = {
+"       \ 'exe': 'mix',
+"       \ 'args': ['credo', 'list', '%:p', '--format=oneline'],
+"       \ 'errorformat': '[%t] %. %f:%l:%c %m,[%t] %. %f:%l %m',
+"       \ 'postprocess': function('NeomakeCredoErrorType')
+"       \ }
+
+""" deoplete
+let g:deoplete#enable_at_startup = 1
+
+""" gist
+let g:gist_post_private = 1
+
+""" elm
+let g:elm_format_autosave = 1
 
 """"" BEHAVIOUR {{{1
 
