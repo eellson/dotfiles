@@ -11,6 +11,9 @@
 [push]
   default = simple
 
+[commit]
+  verbose = true
+
 [core]
   excludesfile = /Users/ed/.gitignore
   editor = nvim
