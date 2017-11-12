@@ -15,7 +15,7 @@
   verbose = true
 
 [core]
-  excludesfile = /Users/ed/.gitignore
+  excludesfile = ~/.gitignore
   editor = nvim
 [credential]
   helper = osxkeychain
