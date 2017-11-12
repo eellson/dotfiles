@@ -10,6 +10,7 @@ Plug 'elixir-lang/vim-elixir'         " elixir
 Plug 'embear/vim-localvimrc'          " local vimrc files
 Plug 'janko-m/vim-test'               " test wrapper
 Plug 'joshdick/onedark.vim'           " onedark colourscheme
+Plug 'neomake/neomake'                " neomake for linting etc
 Plug 'sheerun/vim-polyglot'           " language packs
 Plug 'tpope/vim-commentary'           " better commenting
 Plug 'tpope/vim-fugitive'             " git plugin
@@ -50,7 +51,15 @@ let g:localvimrc_whitelist = [
 map <Leader>z :VimuxZoomRunner<CR> " zoom vimux pane
 
 """ neomake
-autocmd! BufWritePost * Neomake " run neomake on save
+function! MyOnBattery()
+  return readfile('/sys/class/power_supply/AC/online') == ['0']
+endfunction
+
+if MyOnBattery()
+  call neomake#configure#automake('w')
+else
+  call neomake#configure#automake('nw', 1000)
+endif
 
 " better credo handling as-per https://github.com/neomake/neomake/pull/300#issuecomment-244722296
 let g:neomake_elixir_enabled_makers = ['mix', 'credo']
