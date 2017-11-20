@@ -19,6 +19,14 @@ Plug 'tpope/vim-vinegar'              " netrw sensible defaults
 Plug 'rking/ag.vim'                   " silver searcher
 Plug 'sjl/badwolf'
 Plug 'slashmili/alchemist.vim'        " alchemist-server integration for mix projects
+" deplete:
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 
 " Add plugins to &runtimepath
 call plug#end()
