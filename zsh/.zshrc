@@ -53,7 +53,9 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Initialise rbenv
+export PATH="$PATH:$HOME/.rbenv/bin"
 eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 export PATH="./.bundle/bin:$PATH"
 
