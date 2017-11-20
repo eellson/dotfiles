@@ -91,7 +91,7 @@ export KEYTIMEOUT=1
 alias b='bundle install --binstubs .bundle/bin --path .bundle/gems'
 
 # alias for rlwrap iex
-alias iex='rlwrap -a foo iex'
+alias iex='rlwrap -afoo iex'
 
 # use vim bindings
 bindkey -v
