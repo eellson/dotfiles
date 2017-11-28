@@ -101,5 +101,7 @@ bindkey '^R' history-incremental-search-backward
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+export TERM=xterm-256color
+
 ### Update PATH for aws cli
 export PATH=~/.local/bin:$PATH
