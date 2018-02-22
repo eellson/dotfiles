@@ -101,7 +101,8 @@ bindkey '^R' history-incremental-search-backward
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-export TERM=xterm-256color
+### Don't forward custom TERM with ssh
+alias ssh='TERM=xterm-256color ssh'
 
 ### Update PATH for aws cli
 export PATH=~/.local/bin:$PATH
