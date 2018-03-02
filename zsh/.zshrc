@@ -106,3 +106,7 @@ alias ssh='TERM=xterm-256color ssh'
 
 ### Update PATH for aws cli
 export PATH=~/.local/bin:$PATH
+
+### asdf version manager
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
