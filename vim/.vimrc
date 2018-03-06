@@ -104,6 +104,10 @@ let g:gist_post_private = 1
 """ elm
 let g:elm_format_autosave = 1
 
+""" elixir formatter on save (hopefully will be integrated with plugin soon!
+autocmd BufWritePost *.exs silent :!mix format %
+autocmd BufWritePost *.ex silent :!mix format %
+
 """"" BEHAVIOUR {{{1
 
 """ Splits
