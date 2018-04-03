@@ -93,6 +93,9 @@ alias b='bundle install --binstubs .bundle/bin --path .bundle/gems'
 # alias for rlwrap iex
 alias iex='rlwrap -afoo iex'
 
+# alias for tmux utf-8 support
+alias tmux='tmux -u'
+
 # use vim bindings
 bindkey -v
 # reeable Ctrl-R for history (unbound with vim bindings)
