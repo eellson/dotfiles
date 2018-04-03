@@ -59,15 +59,15 @@ let g:localvimrc_whitelist = [
 map <Leader>z :VimuxZoomRunner<CR> " zoom vimux pane
 
 """ neomake
-function! MyOnBattery()
-  return readfile('/sys/class/power_supply/AC/online') == ['0']
-endfunction
+" function! MyOnBattery()
+"   return readfile('/sys/class/power_supply/AC/online') == ['0']
+" endfunction
 
-if MyOnBattery()
-  call neomake#configure#automake('w')
-else
-  call neomake#configure#automake('nw', 1000)
-endif
+" if MyOnBattery()
+"   call neomake#configure#automake('w')
+" else
+call neomake#configure#automake('nw', 1000)
+" endif
 
 " better credo handling as-per https://github.com/neomake/neomake/pull/300#issuecomment-244722296
 let g:neomake_elixir_enabled_makers = ['mix', 'credo']
