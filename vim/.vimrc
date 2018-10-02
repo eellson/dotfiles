@@ -109,6 +109,9 @@ let g:elm_format_autosave = 1
 autocmd BufWritePost *.exs silent :!mix format %
 autocmd BufWritePost *.ex silent :!mix format %
 
+""" fzf
+nnoremap <leader>f :FZF<CR>
+
 """"" BEHAVIOUR {{{1
 
 """ Splits
