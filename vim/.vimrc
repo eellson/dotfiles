@@ -16,7 +16,6 @@ Plug 'tpope/vim-commentary'           " better commenting
 Plug 'tpope/vim-fugitive'             " git plugin
 Plug 'tpope/vim-rails'                " rails plugin
 Plug 'tpope/vim-vinegar'              " netrw sensible defaults
-Plug 'rking/ag.vim'                   " silver searcher
 Plug 'sjl/badwolf'
 Plug 'slashmili/alchemist.vim'        " alchemist-server integration for mix projects
 Plug '/usr/local/opt/fzf'
