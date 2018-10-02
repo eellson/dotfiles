@@ -19,7 +19,9 @@ Plug 'tpope/vim-vinegar'              " netrw sensible defaults
 Plug 'rking/ag.vim'                   " silver searcher
 Plug 'sjl/badwolf'
 Plug 'slashmili/alchemist.vim'        " alchemist-server integration for mix projects
-" deplete:
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
+" deoplete:
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
