@@ -113,3 +113,7 @@ export PATH=~/.local/bin:$PATH
 ### asdf version manager
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
+
+### fzf fuzzy file finder
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='ag -g ""'
