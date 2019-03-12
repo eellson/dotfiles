@@ -46,8 +46,19 @@ function! DockerWebTransform(cmd) abort
   return 'docker-compose run web '.a:cmd
 endfunction
 
+" Fix for running test file in umbrella, when project open at root
+function! ElixirUmbrellaTransform(cmd) abort
+  if match(a:cmd, 'apps/') != -1
+    return substitute(a:cmd, 'mix test apps/\([^/]*\)/', 'mix cmd --app \1 mix test --color ', '')
+  else
+    return a:cmd
+  end
+endfunction
+
 let test#strategy = 'vimux' " use vimux test strategy
-let g:test#custom_transformations = {'docker': function('DockerWebTransform')}
+let g:test#custom_transformations = {'docker': function('DockerWebTransform'), 'elixir_umbrella': function('ElixirUmbrellaTransform')}
+
+let g:test#transformation = 'elixir_umbrella'
 
 """ vim-localvimrc
 let g:localvimrc_whitelist = [
