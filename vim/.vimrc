@@ -7,7 +7,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'         " git indicators in gutter
 Plug 'benmills/vimux'                 " tmux integration
 Plug 'elixir-lang/vim-elixir'         " elixir
-Plug 'embear/vim-localvimrc'          " local vimrc files
 Plug 'janko-m/vim-test'               " test wrapper
 Plug 'joshdick/onedark.vim'           " onedark colourscheme
 Plug 'neomake/neomake'                " neomake for linting etc
@@ -59,13 +58,6 @@ let test#strategy = 'vimux' " use vimux test strategy
 let g:test#custom_transformations = {'docker': function('DockerWebTransform'), 'elixir_umbrella': function('ElixirUmbrellaTransform')}
 
 let g:test#transformation = 'elixir_umbrella'
-
-""" vim-localvimrc
-let g:localvimrc_whitelist = [
-      \'/Users/ed/Projects/snapetto/.lvimrc',
-      \'/Users/ed/Projects/lifegoals/.lvimrc',
-      \'/Users/ed/Projects/team_minted/.lvimrc'
-      \]
 
 """ vimux
 map <Leader>z :VimuxZoomRunner<CR> " zoom vimux pane
