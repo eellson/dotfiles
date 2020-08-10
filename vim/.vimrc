@@ -13,6 +13,7 @@ Plug 'neomake/neomake'                " neomake for linting etc
 Plug 'sheerun/vim-polyglot'           " language packs
 Plug 'tpope/vim-commentary'           " better commenting
 Plug 'tpope/vim-fugitive'             " git plugin
+Plug 'tpope/vim-rhubarb'              " github for fugitive
 Plug 'tpope/vim-rails'                " rails plugin
 Plug 'tpope/vim-vinegar'              " netrw sensible defaults
 Plug 'sjl/badwolf'
