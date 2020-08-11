@@ -173,6 +173,10 @@ tnoremap <C-j> <C-\><C-n><C-w>j
 tnoremap <C-k> <C-\><C-n><C-w>k
 tnoremap <C-l> <C-\><C-n><C-w>l
 
+""" Fix C-l in netrw. This is a hack as Netrw maps takes this over _if_ we
+""" haven't mapped something to NetrwRefresh
+nmap <unique> <c-r> <Plug>NetrwRefresh
+
 set mouse=a
 
 """"" AESTHETICS {{{1
