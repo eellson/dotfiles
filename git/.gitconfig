@@ -19,3 +19,5 @@
   editor = nvim
 [credential]
   helper = osxkeychain
+[pull]
+	ff = only
